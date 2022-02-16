@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crie Perfil</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="_styles/animations.css">
+    <link rel="stylesheet" href="_styles/layout.css" />
+    <link rel="stylesheet" href="_styles/typography.css" />
+  </head>
+  <body>
+    <section id="formulario">
+      <div id="formulario-mestre">
+        <div id="formulario-header">
+          <h1>Teste Desenvolvedor(a)</h1>
+          <p>idm.business</p>
+          <div id="formulario-header-acesso">
+            <div id="formulario-header-botao">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <a href="#"><h4>Entrar</h4></a>
+            </div>
+            <ion-icon id="formulario-header-opcoes" name="ellipsis-horizontal-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <p class="destaque">Crie seu perfil</p>
+        <form>
+          <div>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu primeiro nome"
+            />
+          </div>
+
+          <div id="data-mestre">
+            <div id="data-dia">
+              <input
+                type="number"
+                name="dia"
+                id="dia-numero"
+                placeholder="Dia"
+              />
+            </div>
+            <div id="data-mes">
+              <input type="text" name="mes" id="mes" placeholder="Mes" />
+            </div>
+            <div id="ano">
+              <input type="text" name="ano" id="ano" placeholder="Ano" />
+            </div>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              name="localizacao"
+              id="localizacao"
+              placeholder="Incerir localização"
+            />
+          </div>
+
+          <p>ex: São Paulo, Brasil</p>
+
+          <div id="radio-mestre">
+            <label id="masc">
+              <input type="radio" name="masculino" class="mas-fem"  value="masculino" />
+              Masculino
+            </label>
+            <label id="fem">
+              <input type="radio" name="feminino" class="mas-fem" value="feminino" /> Feminino
+            </label>
+          </div>
+
+          <div>
+            <input
+              type="email"
+              name="email-cel"
+              id="emil-cel"
+              placeholder="E-mail ou número de celular"
+            />
+          </div>
+
+          <div>
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Crie sua senha"
+            />
+          </div>
+
+          <p>Senha deve conter ao menos 5 caracteres</p>
+
+          <button type="submit">Cadastrar-se</button>
+
+        </form>
+      </div>
+    </section>
+
+    <section id="corpo">
+      <div id="Corpo-mestre">
+        <div id="corpo-header">
+          <ion-icon id="like" name="heart-circle-outline"></ion-icon>
+          <ion-icon id="deslike" name="close-circle-outline"></ion-icon>
+          <div id="nome-user">
+            <h1>Carine, 30</h1>
+            <div id="nome-user-interesse">
+              <h1>0</h1>
+              <p>Interesses dela</p>
+            </div>
+          </div>
+          <div id="corpo-header-icons">
+            <ul>
+              <ion-icon name="person-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="options-outline"></ion-icon>
+            </ul>
+          </div>
+        </div>
+        <div id="corpo-img">
+          <div id="corpo-esquerdo">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+          <div id="corpo-centro">
+            <div id="imagens">
+              <ul>
+                <li><img src="_imagens/pexels-andrea-piacquadio-733872.jpg" alt=""></li>
+              </ul>
+              <ul>
+                <li><img src="_imagens/pexels-daniel-xavier-1239291.jpg" alt=""></li>
+              </ul>
+              <ul>
+                <li><img src="_imagens/pexels-justin-shaifer-1222271.jpg" alt=""></li>
+              </ul>
+            </div>
+
+          </div>
+          <div id="corpo-direito">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="_scripts/script.js"></script>
+
+    
+  </body>
+</html>

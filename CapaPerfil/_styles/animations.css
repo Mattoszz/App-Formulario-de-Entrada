@@ -1,0 +1,66 @@
+/*--- Animacao com */
+
+@keyframes formularioHeader-moverEsquerda{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    70%{
+        opacity: 0.8px;
+        transform: translateX(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes formularioHeaderp-opacidade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes sectionFormulario-subindo{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80%{
+        transform: translateY(-8px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes corpoHeader{
+    0%{
+        opacity: 0;
+        transform: translatex(-50px);
+    }
+    80%{
+        transform: translatex(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes corpoImagem{
+    0%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+}

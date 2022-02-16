@@ -1,0 +1,334 @@
+
+/*
+CORES
+Cinza Claro: #f8f8f8
+Branco: #FFFF
+Cinza escuro: #2D3238
+Vermelho fraco: #3464D4
+Vermelho mais escuro: #7000E3
+Cinza escuro: #FF661B
+Verde claro: #72A73D
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - FORMULARIO HEADER       */
+/*----------------------------*/
+
+section#formulario{
+    width: 30%;
+    background-color: #f8f8f8;
+    float: left;
+}
+
+section#formulario div#formulario-mestre{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+        
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;  
+
+}
+
+div#formulario-mestre div#formulario-header{
+    width: 100%;
+    height: 150px;
+    padding: 10px 0 10px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    animation-name: formularioHeader-moverEsquerda;
+    animation-duration: 2.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div#formulario-header-acesso{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div#formulario-header div#formulario-header-botao{
+    width: 40%;
+    height: 50px;
+    background: linear-gradient(rgba(8,117,182) 0%, rgba(52,100,212) 50%, rgba(8,117,182) 100%);
+    margin: 0 5px;   
+    border-radius: 10px;
+    align-items: center;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+div#formulario-header-acesso ion-icon#formulario-header-opcoes{
+    font-size: 300%;
+    color: #A3A3A3;
+    cursor: pointer;
+}
+
+div#formulario-header-botao ion-icon{
+    font-size: 25px;
+    color: #FFF;
+    margin-right: 10px;
+}
+
+div#formulario-header-botao a{
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - FORMULARIO CORPO             */
+/*----------------------------*/
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+section#formulario form{
+    width: 80%;
+    margin: 20px 0 20px 50px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    animation-name: sectionFormulario-subindo;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+section#formulario form div#data-mestre{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div#data-mestre input#dia-numero{
+    width: 70px;
+    height: 30px;
+    margin-right: 5px;  
+}
+
+div#data-mestre input#mes{
+    width: 122px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+div#data-mestre input#ano{
+    width: 100px;
+    height: 30px;
+}
+
+div#formulario-mestre #radio-mestre{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+  
+    text-align: left;
+}
+
+div#formulario-mestre input.mas-fem{
+    width: 18px;
+    height: 18px;
+    margin-top: 4px;
+    
+    margin-left: 18px;
+}
+
+div#formulario-mestre label#masc{
+    margin-right: 26px;
+}
+
+div#formulario-mestre button{
+    width: 70%;
+    height: 50px;
+    background: linear-gradient(rgba(112,0,227) 0%, rgba(167,101,236), 50%, rgba(112,0,227) 100%);
+    color: #FFF;
+    border-radius: 6px;
+    margin: 0 auto 10px auto;
+    cursor: pointer;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - CORPO             */
+/*----------------------------*/
+
+section#corpo{
+    width: 70%;
+    float: left;
+}
+
+section#corpo div#Corpo-mestre{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div#Corpo-mestre div#corpo-header{
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+
+    animation-name: corpoHeader;
+    animation-duration: 2s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div#corpo-header ion-icon#like{
+    font-size: 500%;
+    font-weight: 100;
+    color: #FF661B;
+    cursor: pointer;
+}
+
+div#corpo-header ion-icon#like:hover{
+    transition-duration: 0.8s;
+    color: #daa78e
+}
+
+div#corpo-header ion-icon#deslike{
+    font-size: 500%;
+    font-weight: 100;
+    color: #A3A3A3;
+    cursor: pointer;
+}
+
+div#corpo-header ion-icon#deslike:hover{
+    transition-duration: 0.8s;
+    color: #525457;
+}
+
+div#corpo-header div#nome-user{
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+div#corpo-header div#nome-user div#nome-user-interesse{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;   
+}
+
+div#corpo-header div#corpo-header-icons{
+    position: relative;
+    left: 300px;   
+}
+
+div#corpo-header-icons ion-icon{
+    font-size: 250%;
+    color: #A3A3A3;
+    border: 2px solid #A3A3A3;
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+div#corpo-header-icons ion-icon:hover{
+    transition-duration: 0.8s;
+    color: #2D3238;
+}
+
+div#Corpo-mestre div#corpo-img{
+    width: 100%;
+    height: 400px;   
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    animation-name: corpoImagem;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div#corpo-img div#corpo-esquerdo, div#corpo-img div#corpo-direito{
+    width: 20%; 
+    text-align: center;
+    background-color: #2D3238;
+    cursor: pointer;
+}
+
+div#Corpo-mestre div#corpo-img ion-icon{
+    width: 50%;
+    height: 50%;
+    padding-top: 50%;
+    
+    color: #A3A3A3;
+}
+
+div#corpo-esquerdo ion-icon{
+    opacity: 0.1;
+}
+
+div#corpo-img div#corpo-centro{
+    width: 60%;
+    height: 465px;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+}
+
+div#corpo-centro div#imagens{
+    position: absolute;
+    left: 0;
+    width: 2680px
+}
+
+div#corpo-centro div#imagens ul{
+    display: inline-table;
+    width: 532px;  
+}
+
+div#corpo-centro div#imagens ul li{
+    list-style: none;
+    display: inline-table;
+    width: 100%;
+    margin: 0;
+}
+
+div#corpo-centro div#imagens ul img{
+    width: 100%;
+    height: 465px;
+}

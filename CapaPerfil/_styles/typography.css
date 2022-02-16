@@ -1,0 +1,112 @@
+/*
+TIPOGRAFIA
+font-family: 'Akaya Telivigala', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+
+/*
+CORES
+Cinza Claro: #f8f8f8
+Branco: #FFFF
+Cinza escuro: #2D3238
+Vermelho fraco: #3464D4
+Vermelho mais escuro: #7000E3
+Cinza escuro: #FF661B
+Verde claro: #72A73D
+
+*/
+
+h1, h2, h3 {
+    font-family: 'El Messiri', sans-serif;
+    text-align: center;
+}
+
+h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-family: 'El Messiri', sans-serif;
+}
+
+h1{
+    font-size: 200%;
+    font-weight: 600;
+    color: #303030;
+}
+
+*{
+    font-size: 16px;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - FORMULARIO        */
+/*----------------------------*/
+
+div#formulario-header h1{
+    font-size: 150%;
+
+    animation-name: formularioHeaderH1-opacidade;
+    animation-duration: 2.5s;
+}
+
+div#formulario-header p{
+    font-family: 'Akaya Telivigala', cursive;
+    color: #72A73D;
+    margin-bottom: 8px;
+}
+
+p.destaque{
+    font-size: 120%;
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    color: #303030;
+
+    animation-name: formularioHeaderp-opacidade;
+    animation-duration: 6s;
+    animation-delay: 0.7;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div#formulario-header-botao a h4{
+    font-size: 120%;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - FORMULARIO CORPO             */
+/*----------------------------*/
+
+form p{
+    width: 80%;
+    text-align: left;
+    margin: 0 15px 8px;
+    font-size: 90%;
+    color: #A3A3A3;
+    font-weight: 500;
+}
+
+div#formulario-mestre label{
+    font-size: 110%;
+    font-family: 'Open Sans', sans-serif;
+    color: #A3A3A3;
+}
+
+/*----------------------------*/
+/*  SEÇÃO - CORPO HEADER      */
+/*----------------------------*/
+
+div#corpo-header div#nome-user h1{
+    font-size: 160%;
+    font-weight: 100;
+    color: #525151;
+}
+
+div#corpo-header div#nome-user div#nome-user-interesse p{
+    width: 100px;
+    height: 40px;
+    color: #A3A3A3;
+    margin-left: 10px;
+}
